@@ -16,7 +16,7 @@ import { useState,useEffect,useRef } from "react";
 import Alert from './Alert'
 import Typing from "./Typing/Typing";
 
-import Bg from "./Bg";
+
 const Main = () => {
 	const handleLogout = () => {
 		localStorage.removeItem("token");
