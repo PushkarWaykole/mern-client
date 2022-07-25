@@ -3,7 +3,7 @@ import Text from './Text'
 import Feedback from "./Typing/Feedback"
 import React from "react";
 // import { useEffect, useRef, useState } from "react";
-import NET from "vanta/dist/vanta.net.min";
+
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 import BIRDS from "vanta/dist/vanta.birds.min";
 import RINGS from "vanta/dist/vanta.rings.min";
@@ -42,35 +42,12 @@ const Main = () => {
   }
 
 
-  //Vanta 
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        NET({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          // colorMode: "lerpGradient"
-        
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destory();
-    };
-  }, [vantaEffect]);
+  
+   
 
 
 	return (
-		<div className={styles.main_container} ref={vantaRef} >
+		<div className={styles.main_container} >
 			<nav className={styles.navbar}>
 				<h1>Typing Utilies</h1>
 				
