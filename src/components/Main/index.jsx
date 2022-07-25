@@ -4,11 +4,7 @@ import Feedback from "./Typing/Feedback"
 import React from "react";
 // import { useEffect, useRef, useState } from "react";
 
-import CLOUDS from "vanta/dist/vanta.clouds.min";
-import BIRDS from "vanta/dist/vanta.birds.min";
-import RINGS from "vanta/dist/vanta.rings.min";
-import WAVES from "vanta/dist/vanta.waves.min";
-import * as THREE from "three";
+
 import {
   BrowserRouter as Router,
   Switch,
